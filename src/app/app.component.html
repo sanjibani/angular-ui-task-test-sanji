@@ -1,0 +1,36 @@
+<!-- <hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p> -->
+
+<div>
+
+</div>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <buttonList *ngIf="compStatus.show1" [buttonStatus]="compStatus" [positionNumber]="1" (shoeValues)="buttonClickValue($event)"> </buttonList>
+    </div>
+    <div class="col">
+      <buttonList *ngIf="compStatus.show2" [buttonStatus]="compStatus" [positionNumber]="2" (shoeValues)="buttonClickValue($event)"> </buttonList>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <buttonList *ngIf="compStatus.show3" [buttonStatus]="compStatus" [positionNumber]="3" (shoeValues)="buttonClickValue($event)"> </buttonList>
+
+    </div>
+    <div class="col">
+      <buttonList *ngIf="compStatus.show4" [buttonStatus]="compStatus" [positionNumber]="4" (shoeValues)="buttonClickValue($event)"> </buttonList>
+
+    </div>
+    
+  </div>
+</div>
